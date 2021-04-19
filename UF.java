@@ -1,4 +1,4 @@
-public class UF
+public class UF  // Union-Find data structure
       {
         public int count;
         public int[] id;
@@ -19,7 +19,7 @@ public class UF
             return id[p];
         }
         
-        public boolean connected(WeightedDirectedEdge edge)
+        public boolean connected(WeightedDirectedEdge edge)  // check wether connected
         {
 
           return find(edge.from())==find(edge.to());
@@ -30,7 +30,7 @@ public class UF
 
         }
 
-        public void union(WeightedDirectedEdge edge)
+        public void union(WeightedDirectedEdge edge)  // union method
         {
             int pID=find(edge.from());
             int qID=find(edge.to());
@@ -52,4 +52,3 @@ public class UF
     
 
       }
-    

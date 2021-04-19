@@ -1,4 +1,4 @@
-public class WeightedDirectedEdge implements Comparable<WeightedDirectedEdge>{
+public class WeightedDirectedEdge implements Comparable<WeightedDirectedEdge>{  // edge class;
     private final int v;
     private final int w;
     private int weight;
@@ -36,7 +36,7 @@ public class WeightedDirectedEdge implements Comparable<WeightedDirectedEdge>{
 
     }
 
-    public boolean equals(int from,int to)
+    public boolean equals(int from,int to)  // equals method
     {
       if(this.from()== from&&this.to()==to)
       {
@@ -47,6 +47,11 @@ public class WeightedDirectedEdge implements Comparable<WeightedDirectedEdge>{
         return false;
       }
 
+    }
+    public void edit(WeightedDirectedEdge edge)
+    {
+      this.weight=edge.weight();
+      this.price=edge.price();
     }
     
   }

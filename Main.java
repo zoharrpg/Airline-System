@@ -1,13 +1,13 @@
 import java.util.*;
 import java.io.*;
 
-
 public class Main {
-    public static void main(String[] args) throws IOException {
+
+    public static void main(String[] args) throws IOException {  // main function;
         AirlineSystem airline = new AirlineSystem();
         
         while(true){
-          switch(airline.menu()){
+          switch(airline.menu()){  // option for the cases
             case 1:
               airline.readGraph();
               break;
